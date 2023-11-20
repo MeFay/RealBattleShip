@@ -10,6 +10,7 @@ public class Main {
         int verticalNumber = Integer.parseInt(String.valueOf(string.charAt(1)));
         System.out.println(horizontalNumber);
         System.out.println(verticalNumber);
+        Player player1 = new Player("username");
        // boolean gameOver = false;
     }
 }

@@ -3,17 +3,12 @@ import java.util.List;
 
 public class Player {
     private String username;
-    private List<Integer> selection;
     private List<Boolean> playerTakesHit;
     private int quantRightGuesses = 17;
     private Ship[] playerShips = new Ship[5];
 
-    public Player(String username, List<Integer> selection, List<Boolean> playerTakesHit, int quantRightGuesses, Ship[] playerShips) {
+    public Player(String username) {
         this.username = username;
-        this.selection = selection;
-        this.playerTakesHit = playerTakesHit;
-        this.quantRightGuesses = quantRightGuesses;
-        this.playerShips = playerShips;
     }
 
     public String getUsername() {
@@ -24,13 +19,6 @@ public class Player {
         this.username = username;
     }
 
-    public List<Integer> getSelection() {
-        return selection;
-    }
-
-    public void setSelection(List<Integer> selection) {
-        this.selection = selection;
-    }
 
     public List<Boolean> getPlayerTakesHit() {
         return playerTakesHit;
@@ -56,9 +44,12 @@ public class Player {
         this.playerShips = playerShips;
     }
 
-    public Player(String username) {
-        this.username = username;
+
+
+    public boolean setShips(int intialX, int initalY){
+return false;
     }
+
 }
 
 
