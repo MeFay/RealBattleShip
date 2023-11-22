@@ -70,6 +70,7 @@ public enum Color {
     BLUE_BACKGROUND_BRIGHT("\033[0;104m"),      // BLUE
     MAGENTA_BACKGROUND_BRIGHT("\033[0;105m"),   // MAGENTA
     CYAN_BACKGROUND_BRIGHT("\033[0;106m"),      // CYAN
+    CLEAR_CONSOLE("\033[H\033[2J"),
     HIT_SYMBOL(Color.RED_BOLD + "⦿" + Color.RESET),
     MISS_SYMBOL(Color.BLACK_BOLD + "✘" + Color.RESET);
 

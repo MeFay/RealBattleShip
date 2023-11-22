@@ -16,6 +16,8 @@ public class Field {
         this.playField = playField;
     }
     static public void showField() {
+        System.out.println(
+        Color.CLEAR_CONSOLE);
         for (int i = 0; i < 10; i++) {
             System.out.println(" ");
             for (int j = 0; j < 10; j++) {

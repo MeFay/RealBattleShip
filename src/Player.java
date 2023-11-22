@@ -2,13 +2,21 @@ import java.awt.*;
 import java.util.List;
 
 public class Player {
+private Field actualField;
+private Field pseudoField;
     private String username;
     private List<Boolean> playerTakesHit;
     private int quantRightGuesses = 17;
     private Ship[] playerShips = new Ship[5];
+    private boolean cpu;
 
     public Player(String username) {
         this.username = username;
+    }
+
+    public Player(String username, boolean cpu) {
+        this.username = username;
+        this.cpu = cpu;
     }
 
     public String getUsername() {
